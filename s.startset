@@ -1,18 +1,6 @@
-#FROMTHESTARTSET
-#menu:
-'bg' = img.system;
-'settbut' = pos.system, size.system, img.system;
-'logo' = pos.system, size.system, img.system;
-'poweredby' = pos.system;
-'downloadbut' = pos.system, size.system, img.system; #
-
-#shelfs:
-shelf = <main> #
-
-#files:
 <main> = 'jar' 'close'; 
-<jar_selected> = if 'jar' <jar_content>;
-<close_selected> = if 'close' 'po.txt';
+<jar> = if 'jar' <jar_content>;
+<close> = if 'close' 'po.txt';
 <jar_content> = 'w' 'a'; 
-<w_selected> = if 'w' 'd.txt';
-<a_selected> = if 'a' 't.txt'; #
+<w> = if 'w' 'd.txt';
+<a> = if 'a' 't.txt';
